@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Pets - PawFinder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pets.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg class="nav-logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                    </path>
+                </svg>
+                <span class="nav-logo-text">PawFinder</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="pets.html" class="nav-link active">Browse Pets</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Find Your Perfect Companion</h1>
+            <p class="page-description">Browse our available pets and find your new best friend</p>
+        </div>
+    </section>
+
+    <!-- Pets Listing -->
+    <section class="section">
+        <div class="container">
+            <div class="pets-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters">
+                    <h3 class="filters-title">Filters</h3>
+
+                    <div class="filter-group">
+                        <label for="searchInput" class="filter-label">Search</label>
+                        <input type="text" id="searchInput" class="filter-input"
+                            placeholder="Search by name or breed...">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="typeFilter" class="filter-label">Pet Type</label>
+                        <select id="typeFilter" class="filter-select">
+                            <option value="">All Types</option>
+                            <option value="Dog">Dogs</option>
+                            <option value="Cat">Cats</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="ageFilter" class="filter-label">Age</label>
+                        <select id="ageFilter" class="filter-select">
+                            <option value="">All Ages</option>
+                            <option value="0-1">Puppy/Kitten (0-1 years)</option>
+                            <option value="1-3">Young (1-3 years)</option>
+                            <option value="3-7">Adult (3-7 years)</option>
+                            <option value="7+">Senior (7+ years)</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="genderFilter" class="filter-label">Gender</label>
+                        <select id="genderFilter" class="filter-select">
+                            <option value="">All Genders</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+
+                    <button id="clearFilters" class="btn btn-outline" style="width: 100%; margin-top: 1rem;">
+                        Clear Filters
+                    </button>
+                </aside>
+
+                <!-- Pets Grid -->
+                <div class="pets-content">
+                    <div class="pets-count">
+                        <span id="resultsCount">12 pets available</span>
+                    </div>
+
+                    <div class="pets-grid" id="petsGrid">
+                        <!-- Pets will be loaded here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="footer-logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                        <span class="footer-logo-text">PawFinder</span>
+                    </div>
+                    <p class="footer-description">
+                        Connecting loving families with pets in need of forever homes. Every adoption saves a life.
+                    </p>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="pets.html">Browse Pets</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html#process">Adoption Process</a></li>
+                        <li><a href="about.html#faq">FAQs</a></li>
+                        <li><a href="#">Pet Care Tips</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="mailto:info@pawfinder.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PawFinder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pets.js"></script>
+</body>
+
+</html>

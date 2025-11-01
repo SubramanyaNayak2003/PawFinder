@@ -1,0 +1,92 @@
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--primary) 0%, transparent 50%, var(--accent) 100%);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.page-description {
+    font-size: 1.125rem;
+    color: var(--muted-foreground);
+}
+
+/* Pets Layout */
+.pets-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+}
+
+/* Filters */
+.filters {
+    background-color: var(--muted);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    height: fit-content;
+    position: sticky;
+    top: 5rem;
+}
+
+.filters-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.filter-input,
+.filter-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: calc(var(--radius) - 2px);
+    background-color: var(--background);
+    font-family: inherit;
+    font-size: 0.875rem;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Pets Content */
+.pets-content {
+    flex: 1;
+}
+
+.pets-count {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: var(--muted-foreground);
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .pets-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        position: static;
+    }
+}
