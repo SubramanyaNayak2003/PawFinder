@@ -13,7 +13,7 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
+            <a href="index.html" class="nav-logo" aria-label="Go to PawFinder homepage">
                 <svg class="nav-logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
@@ -51,6 +51,7 @@
                 <div class="contact-form-container">
                     <h2 class="form-title">Send Us a Message</h2>
                     <form id="contactForm" class="contact-form">
+                        <!--
                         <div class="form-group">
                             <label for="name" class="form-label">Name *</label>
                             <input type="text" id="name" name="name" class="form-input" required>
@@ -62,9 +63,36 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="phone" class="form-label">Phone</label>
-                            <input type="tel" id="phone" name="phone" class="form-input">
+                            <label for="phone" class="form-label">Phone *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input"required>
                         </div>
+                        -->
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-input"
+                                minlength="2" maxlength="50"
+                                pattern="[A-Za-z\s]{2,50}"
+                                title="Name must be between 2 and 50 letters and contain only alphabets."
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+                                title="Enter a valid email address (e.g., name@example.com)"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input"
+                                pattern="^\d{10,11}$"
+                                title="Phone number must be 10 or 11 digits and contain only numbers."
+                                required>
+                        </div>
+
 
                         <div class="form-group">
                             <label for="petInterest" class="form-label">Pet of Interest</label>
@@ -195,7 +223,7 @@
                 <div class="footer-links-group">
                     <h4 class="footer-links-title">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="pets.html">Browse Pets</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>

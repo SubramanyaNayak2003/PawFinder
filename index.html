@@ -10,9 +10,9 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
+            <a href="index.html" class="nav-logo" aria-label="Go to PawFinder homepage">
                 <svg class="nav-logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
@@ -26,7 +26,7 @@
                 <span class="nav-toggle-line"></span>
             </button>
             <div class="nav-links" id="navLinks">
-                <a href="index.html" class="nav-link active">Home</a>
+                <a href="index.html" class="nav-link active" aria-current="page">Home</a>
                 <a href="pets.html" class="nav-link">Browse Pets</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
@@ -34,6 +34,8 @@
         </div>
     </nav>
 
+
+    <main id="main-content">
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -93,7 +95,7 @@
             <div class="pets-grid">
                 <a href="pet-detail.html?id=1" class="pet-card">
                     <div class="pet-card-image">
-                        <img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=800&q=80" alt="Max">
+                        <img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=800&q=80" alt="Golden Retriever dog named Max">
                         <!--
                         <button class="favorite-btn" aria-label="Add to favorites">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,7 +118,7 @@
 
                 <a href="pet-detail.html?id=2" class="pet-card">
                     <div class="pet-card-image">
-                        <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?w=800&q=80" alt="Luna">
+                        <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?w=800&q=80" alt="Siamese cat named Luna">
                         <!--
                         <button class="favorite-btn" aria-label="Add to favorites">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -139,7 +141,7 @@
 
                 <a href="pet-detail.html?id=3" class="pet-card">
                     <div class="pet-card-image">
-                        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80" alt="Charlie">
+                        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80" alt="Labrador dog named Charlie">
                         <!--
                         <button class="favorite-btn" aria-label="Add to favorites">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -162,7 +164,7 @@
 
                 <a href="pet-detail.html?id=4" class="pet-card">
                     <div class="pet-card-image">
-                        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=800&q=80" alt="Bella">
+                        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=800&q=80" alt="Persian cat named Bella">
                         <!--
                         <button class="favorite-btn" aria-label="Add to favorites">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -320,6 +322,8 @@
             </div>
         </div>
     </section>
+    </main>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -341,7 +345,7 @@
                 <div class="footer-links-group">
                     <h4 class="footer-links-title">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="pets.html">Browse Pets</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>

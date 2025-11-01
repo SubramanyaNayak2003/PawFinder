@@ -679,3 +679,7 @@ a {
         grid-template-columns: 1fr;
     }
 }
+a:focus, button:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
